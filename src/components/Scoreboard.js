@@ -8,7 +8,7 @@ const Scoreboard = () => {
   const [awayTO, setAwayTO] = useState(0);
   const [homeFO, setHomeFO] = useState(0);
   const [awayFO, setAwayFO] = useState(0);
-  const [time, setTime] = useState(60); // default 1 minute (60 seconds)
+  const [time, setTime] = useState(600); // default 1 minute (60 seconds)
   const [isRunning, setIsRunning] = useState(false);
   const [period, setPeriod] = useState(1);
   const timerRef = useRef(null);
@@ -58,7 +58,7 @@ const Scoreboard = () => {
 
   const handleResetTimer = () => {
     setIsRunning(false);
-    setTime(60);
+    setTime(600);
   };
 
   const handleIncreaseTime = () => {
